@@ -13,6 +13,7 @@ function App() {
       <div className="App">
         <Nav />
         <Switch>
+          <Route path="/" exact component={Home}></Route>
           <Route path="/about" component={About}/>
           <Route path="/skills" component={Skills}/>
           <Route path="/projects" component={Projects}/>
@@ -22,5 +23,11 @@ function App() {
     </Router>
   );
 }
+
+const Home = () => (
+  <div>
+    <h1 className="heading1">Hi, Welcome to my webpage</h1>
+  </div>
+);
 
 export default App;
